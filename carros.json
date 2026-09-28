@@ -1,0 +1,52 @@
+  [
+    {
+        "id": 1,
+        "modelo": "Corolla",
+        "ano": 2019,
+        "fabricante": "Toyota",
+        "preco": 15299
+    },
+    {
+        "id": 2,
+        "modelo": "Civic",
+        "ano": 2023,
+        "fabricante": "Honda",
+        "preco": 24490
+    },
+    {
+        "id": 3,
+        "modelo": "T-Cross",
+        "ano": 2024,
+        "fabricante": "Volkswagen",
+        "preco": 14299
+    },
+    {
+        "id": 4,
+        "modelo": "Onix",
+        "ano": 2024,
+        "fabricante": "Chevrolet",
+        "preco": 89990
+    },
+    {
+        "id": 5,
+        "modelo": "Strada",
+        "ano": 2009,
+        "fabricante": "Fiat",
+        "preco": 108990
+    },
+    {
+        "id": 6,
+        "modelo": "HB20",
+        "ano": 2022,
+        "fabricante": "Hyundai",
+        "preco": 86990
+    },
+    {
+        "id": 7,
+        "modelo": "Renegade",
+        "ano": 2024,
+        "fabricante": "Jeep",
+        "preco": 118290
+    }
+]
+ 

@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color:
+        rgb(241, 241, 240);
+
+    color: #030302;
+}
+
+
+header {
+    background: #1cdbfd;
+
+    color: rgb(0, 0, 0);
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+
+main {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 30px auto;
+}
+
+
+.controles {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 100%;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+button {
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #29221d;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+button:hover {
+    background: #77c1df;
+}
+
+
+#status {
+    margin-bottom: 20px;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+
+.lista-carros {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(250px, 1fr)
+        );
+
+    gap: 20px;
+}
+
+
+.card {
+    background:
+        rgb(89, 170, 207);
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 10px
+        rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+
+.card:hover {
+    transform:
+        translateY(-5px);
+}
+
+
+.card h2 {
+    color: #057091;
+
+    margin-bottom: 15px;
+}
+
+
+.card p {
+    margin: 8px 0;
+}
+
+
+footer {
+    margin-top: 40px;
+
+    padding: 20px;
+
+    background: #475868;
+
+    color: rgb(248, 250, 250);
+
+    text-align: center;
+}
