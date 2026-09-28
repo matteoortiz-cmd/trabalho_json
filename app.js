@@ -35,7 +35,7 @@ function mostrarCarros(lista) {
 
         card.classList.add("card");
 
-        const preco = Number(carro.nota).toLocaleString(
+        const preco = Number(carro.preco).toLocaleString(
             "pt-BR",
             {
                 style: "currency",
@@ -44,7 +44,7 @@ function mostrarCarros(lista) {
         );
 
         card.innerHTML = `
-            <h2>${carro.nome}</h2>
+           <h2>${carro.modelo}</h2>
 
             <p>
                 <strong>ID:</strong>
@@ -53,12 +53,12 @@ function mostrarCarros(lista) {
 
             <p>
                 <strong>Ano:</strong>
-                ${carro.idade}
+                ${carro.ano}
             </p>
 
             <p>
-                <strong>Categoria:</strong>
-                ${carro.curso}
+                <strong>Fabricante:</strong>
+                ${carro.fabricante}
             </p>
 
             <p>
