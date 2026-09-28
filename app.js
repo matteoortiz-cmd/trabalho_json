@@ -1,14 +1,12 @@
 let carros = [];
 
 const listaCarros = document.getElementById("listaCarros");
-const status = document.getElementById("status");
+const statusTexto = document.getElementById("status");
 const btnBuscar = document.getElementById("btnBuscar");
-
 
 async function carregarCarros() {
     try {
-
-        status.textContent = "Carregando carros...";
+        statusTexto.textContent = "Carregando carros...";
 
         const resposta = await fetch("carros.json");
 
@@ -18,26 +16,21 @@ async function carregarCarros() {
 
         carros = await resposta.json();
 
-        status.textContent =
+        statusTexto.textContent =
             `${carros.length} carros carregados com sucesso.`;
 
         mostrarCarros(carros);
 
     } catch (erro) {
-
-        status.textContent =
+        statusTexto.textContent =
             `Erro: ${erro.message}`;
-
     }
 }
 
-
 function mostrarCarros(lista) {
-
     listaCarros.innerHTML = "";
 
     lista.forEach((carro) => {
-
         const card = document.createElement("div");
 
         card.classList.add("card");
@@ -75,9 +68,7 @@ function mostrarCarros(lista) {
         `;
 
         listaCarros.appendChild(card);
-
     });
 }
-
 
 btnBuscar.addEventListener("click", carregarCarros);
